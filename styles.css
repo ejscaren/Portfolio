@@ -157,7 +157,7 @@ object-fit: cover;
     overflow: hidden;
 
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-size: contain ;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,6 +204,7 @@ object-fit: cover;
     display: flex; 
     align-items:center;  
     justify-content:space-evenly;
+    
 }
 
 .demoTitle{
@@ -212,6 +213,7 @@ object-fit: cover;
     display: flex;  
     align-items: center; 
     justify-content:space-evenly;
+    justify-content: center;
 }
 
 .home{
@@ -238,4 +240,63 @@ object-fit: cover;
 .aboutImage{
     
 
+}
+
+.portraitHome{
+    display: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: calc(1.5vw + 1.5vh);
+    padding: calc(.4vw + .4vh);
+    border-radius: calc(.5vw + .5vh);
+    
+    background-color: antiquewhite;
+    
+}
+
+.magicHomeButtons{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    font-size: calc(1.5vw + 1.5vh);
+    padding: calc(.4vw + .4vh);
+    border-radius: calc(.5vw + .5vh);
+    
+    background-color: antiquewhite;
+}
+
+@media (orientation: portrait){
+    .demoBody{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .demoElements{
+        width: 100%;
+    }
+     
+    .magicHomeButtons{
+        display: none;
+    }
+    #phome{
+        text-decoration: none;
+    }
+       
+    .portraitHome{
+        display: flex;
+    }
+        /* im am idiot 
+        */
+}
+
+@media (orientation: landscape){
+    
+   
 }
