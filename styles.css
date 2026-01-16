@@ -181,6 +181,7 @@ object-fit: cover;
 .demoImages{
     height: calc(15vw + 15vh); 
     width: calc(20vw + 20vh);
+    padding: calc(1vw + 1vh);
     
 }
 
